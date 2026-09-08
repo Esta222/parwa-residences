@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="nl" data-type="b">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Parwa Residences · een eigen woning in Paramaribo Noord</title>
+<meta name="description" content="Veertig appartementen op eigendomsgrond in Paramaribo Noord. Eigen stroom, eigen water, omheind terrein.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,600&family=Karla:wght@300;400;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="scrollcraft.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-sc-lerp="0.7">
+
+<header class="pillen">
+  <nav class="pil pil--nav" aria-label="Hoofdnavigatie">
+    <a href="#complex">Het complex</a>
+    <a href="#woningen">De woningen</a>
+    <a href="#bouwen">Zo bouwen we</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <a class="pil pil--cta" href="https://wa.me/31638611018?text=Ik%20wil%20meer%20weten%20over%20Parwa%20Residences" rel="noopener">
+    Stel uw vraag
+  </a>
+</header>
+
+<section class="hero">
+  <img class="hero__beeld" src="img/hero-entree.jpg"
+       alt="De binnentuin tussen de twee vleugels, met parkeren onder het gebouw en het zwembad in de verte"
+       fetchpriority="high" width="1600" height="893">
+  <h1 class="hero__merk" aria-label="Parwa Residences">PARWA RESIDENCES</h1>
+  <p class="hero__regel">Een eigen woning in Suriname. Zonder omkijken.</p>
+
+  <div class="balk">
+    <div class="balk__plan" id="plan-paneel"><!-- Task 6 vult dit --></div>
+    <div class="balk__cijfers">
+      <div class="balk__stats">
+        <div class="stat">
+          <span class="stat__label">Woonoppervlak</span>
+          <b class="stat__waarde" id="stat-oppervlak">85 m²</b>
+        </div>
+        <div class="stat">
+          <span class="stat__label">Woningen</span>
+          <b class="stat__waarde">40</b>
+        </div>
+        <div class="stat">
+          <span class="stat__label">Bouwtijd</span>
+          <b class="stat__waarde">22 maanden</b>
+        </div>
+      </div>
+      <div class="kiezer">
+        <button class="kiezer__pijl" data-type-stap="-1" aria-label="Vorig type">‹</button>
+        <button class="kiezer__pijl" data-type-stap="1" aria-label="Volgend type">›</button>
+        <button class="kiezer__rond" data-type-knop="a" aria-label="Type A Parwa" aria-pressed="false"></button>
+        <button class="kiezer__rond" data-type-knop="b" aria-label="Type B Mope" aria-pressed="true"></button>
+        <button class="kiezer__rond" data-type-knop="c" aria-label="Type C Kankantrie" aria-pressed="false"></button>
+        <span class="kiezer__naam" id="type-naam">Type B · Mope</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<main>
+<section id="complex" class="orbit" data-sc-act="scrub" data-sc-span="3.2" data-sc-dwell="0.4">
+  <div data-sc-stage>
+    <img class="sc-stage__poster" src="assets/orbit-poster.jpg" alt="">
+    <video data-sc-scrub data-sc-src="assets/orbit.mp4" data-sc-src-mobile="assets/orbit-m.mp4"
+           muted playsinline aria-label="Rondgang om het complex"></video>
+  </div>
+</section>
+<div class="orbit-regel">
+  <p>Het driedimensionale model waarop de maten en de hoeveelheden zijn gerekend. Draai eraan met uw scroll.</p>
+</div>
+
+<section id="woningen" class="woningen">
+  <h2>Drie plattegronden</h2>
+  <p class="inleiding">Schematisch getekend op de werkelijke maten. Inclusief keuken, sanitair,
+  airconditioning in alle slaapkamers en één overdekte parkeerplaats. De koopsommen staan nog
+  niet vast: er ligt een prijsindicatie, geen vaste aanneemsom, en wij noemen liever geen bedrag
+  dat we later moeten corrigeren.</p>
+
+  <div class="interieur">
+    <div class="interieur__raster">
+      <figure>
+        <img src="img/woonkamer.jpg" alt="Woonkamer met open keuken" loading="lazy" width="1500" height="836">
+        <figcaption>Woonkamer met open keuken</figcaption>
+      </figure>
+      <figure>
+        <img src="img/keuken.jpg" alt="Keuken" loading="lazy" width="1500" height="836">
+        <figcaption>Keuken</figcaption>
+      </figure>
+      <figure>
+        <img src="img/slaapkamer.jpg" alt="Slaapkamer" loading="lazy" width="1500" height="836">
+        <figcaption>Slaapkamer</figcaption>
+      </figure>
+      <figure>
+        <img src="img/badkamer.jpg" alt="Badkamer" loading="lazy" width="1500" height="836">
+        <figcaption>Badkamer</figcaption>
+      </figure>
+    </div>
+    <p class="interieur__disclaimer">Impressies van de afwerking, uit een eerdere renderronde met
+    een andere gevelafwerking dan de buitenbeelden op deze pagina. Bij interieurs valt dat
+    nauwelijks op. De definitieve materialisering volgt uit de technische omschrijving.</p>
+  </div>
+
+  <div class="kiezer kiezer--woningen" aria-label="Kies een woningtype">
+    <button class="kiezer__pijl" data-type-stap="-1" aria-label="Vorig type">‹</button>
+    <button class="kiezer__pijl" data-type-stap="1" aria-label="Volgend type">›</button>
+    <button class="kiezer__rond" data-type-knop="a" aria-label="Type A Parwa" aria-pressed="false"></button>
+    <button class="kiezer__rond" data-type-knop="b" aria-label="Type B Mope" aria-pressed="true"></button>
+    <button class="kiezer__rond" data-type-knop="c" aria-label="Type C Kankantrie" aria-pressed="false"></button>
+  </div>
+
+  <div class="woning">
+    <div class="woning__plan" id="woning-plan"></div>
+    <div class="woning__data">
+      <h3 id="woning-naam">Type B · Mope</h3>
+      <p id="woning-kamers">3 kamers, hoekbalkon</p>
+      <p class="woning__cijfers"><b id="woning-opp">85</b> m² woonoppervlak ·
+         <b id="woning-aantal">18</b> woningen</p>
+    </div>
+  </div>
+</section>
+
+<section id="bouwen" data-sc-act="pan" data-sc-span="2.2">
+  <div data-sc-stage>
+    <div class="rail" data-sc-pan="0.05">
+      <div class="kaart kaart--kop"><h2>U betaalt mee<br>met de bouw</h2></div>
+      <div class="kaart"><b>10%</b><span>Ondertekening bij de notaris</span><i>maand 0</i></div>
+      <div class="kaart"><b>20%</b><span>Fundering gereed en goedgekeurd</span><i>maand 4</i></div>
+      <div class="kaart"><b>30%</b><span>Ruwbouw gereed, casco gesloten</span><i>maand 11</i></div>
+      <div class="kaart"><b>25%</b><span>Wind- en waterdicht, installaties aangebracht</span><i>maand 17</i></div>
+      <div class="kaart"><b>15%</b><span>Oplevering en sleuteloverdracht</span><i>maand 22</i></div>
+      <div class="kaart kaart--slot"><span>Elke termijn gaat naar de derdengeldenrekening van de
+        notaris en wordt pas vrijgegeven nadat een onafhankelijk bouwkundig opzichter de mijlpaal
+        heeft goedgekeurd.</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="omkijken">
+  <h2>Zonder omkijken begint bij het gebouw</h2>
+  <div class="raster">
+    <div><b>Eigen stroom</b><span>336 panelen op beide daken, samen 134,4 kWp, met accubank
+      en dieselgenerator erachter.</span></div>
+    <div><b>Eigen water</b><span>Watertank met filtering en drukvoorziening, onafhankelijk
+      van de netdruk.</span></div>
+    <div><b>Beveiliging</b><span>Omheind terrein, elektrische poort, camerabewaking en
+      24 uur bemensing.</span></div>
+    <div><b>Parkeren</b><span>Een overdekte plaats per woning onder het gebouw, plus
+      gemarkeerde bezoekersplaatsen langs de rijbaan.</span></div>
+    <div><b>Glasvezel</b><span>Vaste verbinding tot in de meterkast van elke woning.</span></div>
+    <div><b>Beheer</b><span>Voor onderhoud en verhuur in de periodes dat u er niet bent leggen
+      wij een partij vast voor de eerste woning wordt verkocht. Met naam.</span></div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Stel uw vraag</h2>
+  <p class="lopend">U hoeft nu niets te beslissen. Wilt u weten waar we staan, wat een woning
+    ongeveer gaat kosten of wie de notaris wordt, stuur dan een bericht
+    <a href="https://wa.me/31638611018?text=Ik%20wil%20meer%20weten%20over%20Parwa%20Residences"
+       rel="noopener">via WhatsApp</a>.</p>
+  <p class="zijpad">Liever eerst weten wat er nog niet vastligt?
+    <a href="eerlijk.html">Lees waar we nu staan</a>.</p>
+</section>
+</main>
+
+<footer class="voettekst">
+  <p class="voettekst__merk">Parwa Residences · Rotterdam · +31 6 38611018</p>
+  <p>Afbeeldingen, plattegronden, oppervlakten en planningen op deze site zijn indicatief. Er
+    kunnen geen rechten aan worden ontleend. Investeren in vastgoed in het buitenland kent
+    risico's, waaronder bouwrisico, afzetrisico, landenrisico, valutarisico en waardedaling.
+    Deze pagina is geen aanbod en geen beleggingsadvies.</p>
+</footer>
+
+<script src="vendor/lenis.min.js"></script>
+<script>
+  window.__lenis = new Lenis({ lerp: 0.085, smoothWheel: true, syncTouch: false,
+                               anchors: { offset: 0 }, autoRaf: true });
+</script>
+<script src="scrollcraft.js"></script>
+<script>ScrollCraft.mount(document.body);</script>
+<script src="app.js"></script>
+</body>
+</html>
