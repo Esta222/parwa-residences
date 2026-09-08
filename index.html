@@ -63,14 +63,17 @@
 
 <main>
 <section id="complex" class="orbit" data-sc-act="scrub" data-sc-span="3.2" data-sc-dwell="0.4">
+  <img class="orbit__stil" src="img/orbit-stil.jpg" width="1600" height="900"
+       loading="lazy" alt="Het complex van boven, met beide vleugels en de poort in beeld">
   <div data-sc-stage>
-    <img class="sc-stage__poster" src="assets/orbit-poster.jpg" alt="">
+    <img class="sc-stage__poster" src="assets/orbit-poster.jpg" loading="lazy" alt="">
     <video data-sc-scrub data-sc-src="assets/orbit.mp4" data-sc-src-mobile="assets/orbit-m.mp4"
            muted playsinline aria-label="Rondgang om het complex"></video>
   </div>
 </section>
 <div class="orbit-regel">
-  <p>Het driedimensionale model waarop de maten en de hoeveelheden zijn gerekend. Draai eraan met uw scroll.</p>
+  <p>Het driedimensionale model waarop de maten en de hoeveelheden zijn gerekend.
+  <span class="orbit-regel__draai"> Draai eraan met uw scroll.</span></p>
 </div>
 
 <section id="woningen" class="woningen">
@@ -181,7 +184,26 @@
                                anchors: { offset: 0 }, autoRaf: true });
 </script>
 <script src="scrollcraft.js"></script>
-<script>ScrollCraft.mount(document.body);</script>
+<script>
+  // Op smalle schermen past een 16:9-clip nooit rechtop in beeld: bijsnijden
+  // met object-fit:cover velt de vleugels links en rechts weg zodra het
+  // complex draait. Daar geen gepinde rondgang, maar het stilstaande beeld
+  // dat al in de markup staat. Dit moet vóór het mounten van de engine,
+  // want die leest data-sc-act etc. alleen bij het mounten.
+  if (window.matchMedia("(max-width: 820px)").matches) {
+    var orbit = document.getElementById("complex");
+    if (orbit) {
+      orbit.removeAttribute("data-sc-act");
+      orbit.removeAttribute("data-sc-span");
+      orbit.removeAttribute("data-sc-dwell");
+      var clip = orbit.querySelector("video[data-sc-scrub]");
+      if (clip) clip.remove();
+      var poster = orbit.querySelector(".sc-stage__poster");
+      if (poster) poster.remove();
+    }
+  }
+  ScrollCraft.mount(document.body);
+</script>
 <script src="app.js"></script>
 </body>
 </html>
