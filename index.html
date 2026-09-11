@@ -26,9 +26,12 @@
 </header>
 
 <section class="hero">
-  <img class="hero__beeld" src="img/hero-entree.jpg"
-       alt="De binnentuin tussen de twee vleugels, met parkeren onder het gebouw en het zwembad in de verte"
-       fetchpriority="high" width="1600" height="893">
+  <picture>
+    <source media="(max-width: 820px)" srcset="img/hero-binnentuin-m.jpg" width="900" height="1125">
+    <img class="hero__beeld" src="img/hero-binnentuin.jpg"
+         alt="De binnentuin tussen de twee blokken: het zwembad, de overdekte veranda met bar en tafels, en de open plint onder de woningen"
+         fetchpriority="high" width="1600" height="905">
+  </picture>
   <h1 class="hero__merk" aria-label="Parwa Residences">PARWA RESIDENCES</h1>
   <p class="hero__regel">Een eigen woning in Suriname. Zonder omkijken.</p>
 
@@ -64,7 +67,7 @@
 <main>
 <section id="complex" class="orbit" data-sc-act="scrub" data-sc-span="3.2" data-sc-dwell="0.4">
   <img class="orbit__stil" src="img/orbit-stil.jpg" width="1600" height="900"
-       loading="lazy" alt="Het complex van boven, met beide vleugels en de poort in beeld">
+       loading="lazy" alt="Het complex van boven: beide blokken met zonnepanelen, de binnentuin met veranda en zwembad, en de carports langs de muur">
   <div data-sc-stage>
     <img class="sc-stage__poster" src="assets/orbit-poster.jpg" loading="lazy" alt="">
     <video data-sc-scrub data-sc-src="assets/orbit.mp4" data-sc-src-mobile="assets/orbit-m.mp4"
@@ -76,35 +79,69 @@
   <span class="orbit-regel__draai"> Draai eraan met uw scroll.</span></p>
 </div>
 
+<section class="complex" aria-labelledby="complex-kop">
+  <h2 id="complex-kop">Tussen en onder de gebouwen</h2>
+  <p class="inleiding">De binnentuin is van alle bewoners. Onder elk blok ligt een open plint
+  zonder auto's: speels onder Noord, rustig onder Zuid.</p>
+  <div class="interieur__raster complex__raster">
+    <figure>
+      <img src="img/complex-zwembad.jpg" alt="Het zwembad in de binnentuin, met palmen en houten dek" loading="lazy" width="1200" height="679">
+      <figcaption>Zwembad in de binnentuin</figcaption>
+    </figure>
+    <figure>
+      <img src="img/complex-veranda.jpg" alt="De overdekte veranda met bar, zitkuil en plantenbakken" loading="lazy" width="1200" height="679">
+      <figcaption>Veranda met bar</figcaption>
+    </figure>
+    <figure>
+      <img src="img/complex-plint-noord.jpg" alt="De open plint onder blok Noord, met pingpongtafel en zitplekken" loading="lazy" width="1200" height="679">
+      <figcaption>Plint Noord: pingpong en zitplekken</figcaption>
+    </figure>
+    <figure>
+      <img src="img/complex-plint-zuid.jpg" alt="De open plint onder blok Zuid, rustig ingericht met groen en een zitelement" loading="lazy" width="1200" height="679">
+      <figcaption>Plint Zuid: groen en rust</figcaption>
+    </figure>
+    <figure>
+      <img src="img/complex-carport.jpg" alt="Overdekte carports langs de terreinmuur" loading="lazy" width="1200" height="679">
+      <figcaption>Carports langs de muur</figcaption>
+    </figure>
+    <figure>
+      <img src="img/complex-dak.jpg" alt="Het complex van boven, met rijen zonnepanelen op beide daken" loading="lazy" width="1200" height="679">
+      <figcaption>Zonnepanelen op beide daken</figcaption>
+    </figure>
+  </div>
+  <p class="interieur__disclaimer">Impressies, gemaakt op het driedimensionale model. Beplanting,
+  meubilair en afwerking zijn indicatief.</p>
+</section>
+
 <section id="woningen" class="woningen">
   <h2>Drie plattegronden</h2>
-  <p class="inleiding">Schematisch getekend op de werkelijke maten. Inclusief keuken, sanitair,
-  airconditioning in alle slaapkamers en één overdekte parkeerplaats. De koopsommen staan nog
+  <p class="inleiding">Schematisch getekend op de werkelijke maten. Inclusief keuken, sanitair en
+  airconditioning in alle slaapkamers. De koopsommen staan nog
   niet vast: er ligt een prijsindicatie, geen vaste aanneemsom, en wij noemen liever geen bedrag
   dat we later moeten corrigeren.</p>
 
   <div class="interieur">
     <div class="interieur__raster">
       <figure>
-        <img src="img/woonkamer.jpg" alt="Woonkamer met open keuken" loading="lazy" width="1500" height="836">
+        <img src="img/woonkamer.jpg" alt="Woonkamer met open keuken" loading="lazy" width="1500" height="848">
         <figcaption>Woonkamer met open keuken</figcaption>
       </figure>
       <figure>
-        <img src="img/keuken.jpg" alt="Keuken" loading="lazy" width="1500" height="836">
+        <img src="img/keuken.jpg" alt="Keuken" loading="lazy" width="1500" height="848">
         <figcaption>Keuken</figcaption>
       </figure>
       <figure>
-        <img src="img/slaapkamer.jpg" alt="Slaapkamer" loading="lazy" width="1500" height="836">
+        <img src="img/slaapkamer.jpg" alt="Slaapkamer" loading="lazy" width="1500" height="848">
         <figcaption>Slaapkamer</figcaption>
       </figure>
       <figure>
-        <img src="img/badkamer.jpg" alt="Badkamer" loading="lazy" width="1500" height="836">
+        <img src="img/badkamer.jpg" alt="Badkamer" loading="lazy" width="1500" height="848">
         <figcaption>Badkamer</figcaption>
       </figure>
     </div>
-    <p class="interieur__disclaimer">Impressies van de afwerking, uit een eerdere renderronde met
-    een andere gevelafwerking dan de buitenbeelden op deze pagina. Bij interieurs valt dat
-    nauwelijks op. De definitieve materialisering volgt uit de technische omschrijving.</p>
+    <p class="interieur__disclaimer">Impressies van type B, gemaakt op het driedimensionale model
+    van de woning. Meubels en afwerking zijn indicatief; de definitieve materialisering volgt uit
+    de technische omschrijving.</p>
   </div>
 
   <div class="kiezer kiezer--woningen" aria-label="Kies een woningtype">
@@ -119,7 +156,7 @@
     <div class="woning__plan" id="woning-plan"></div>
     <div class="woning__data">
       <h3 id="woning-naam">Type B · Mope</h3>
-      <p id="woning-kamers">3 kamers, hoekbalkon</p>
+      <p id="woning-kamers">3 kamers, hoekloggia</p>
       <p class="woning__cijfers"><b id="woning-opp">85</b> m² woonoppervlak ·
          <b id="woning-aantal">18</b> woningen</p>
     </div>
@@ -151,8 +188,7 @@
       van de netdruk.</span></div>
     <div><b>Beveiliging</b><span>Omheind terrein, elektrische poort, camerabewaking en
       24 uur bemensing.</span></div>
-    <div><b>Parkeren</b><span>Een overdekte plaats per woning onder het gebouw, plus
-      gemarkeerde bezoekersplaatsen langs de rijbaan.</span></div>
+    <div><b>Parkeren</b><span>Overdekt parkeren in carports binnen het omheinde terrein. Onder de gebouwen staan geen auto's: daar is ruimte om te lopen en te zitten.</span></div>
     <div><b>Glasvezel</b><span>Vaste verbinding tot in de meterkast van elke woning.</span></div>
     <div><b>Beheer</b><span>Voor onderhoud en verhuur in de periodes dat u er niet bent leggen
       wij een partij vast voor de eerste woning wordt verkocht. Met naam.</span></div>

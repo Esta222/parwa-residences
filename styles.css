@@ -58,10 +58,10 @@ body{margin:0;background:var(--papier);color:var(--inkt);
 .kiezer__pijl:hover{background:rgba(22,53,43,.07)}
 .kiezer__rond{width:44px;height:44px;border-radius:999px;border:2px solid transparent;
   background-size:cover;background-position:center;cursor:pointer;margin-left:-12px}
-.kiezer__rond[data-type-knop="a"]{background-image:url(img/tussenruimte.jpg)}
-.kiezer__rond[data-type-knop="b"]{background-image:url(img/zwembad.jpg)}
-.kiezer__rond[data-type-knop="c"]{background-image:url(img/paviljoen.jpg)}
-.kiezer--woningen .kiezer__rond{background-color:#fff;background-size:170%}
+.kiezer__rond[data-type-knop="a"]{background-image:url(img/complex-zwembad.jpg)}
+.kiezer__rond[data-type-knop="b"]{background-image:url(img/complex-veranda.jpg)}
+.kiezer__rond[data-type-knop="c"]{background-image:url(img/complex-plint-zuid.jpg)}
+.kiezer--woningen .kiezer__rond{background-color:var(--zwart);background-size:170%}
 .kiezer--woningen .kiezer__rond[data-type-knop="a"]{background-image:url(img/plan-a.svg)}
 .kiezer--woningen .kiezer__rond[data-type-knop="b"]{background-image:url(img/plan-b.svg)}
 .kiezer--woningen .kiezer__rond[data-type-knop="c"]{background-image:url(img/plan-c.svg)}
@@ -113,6 +113,14 @@ html[data-type="c"] .kiezer__rond[data-type-knop="c"]{border-color:var(--klei)}
   letter-spacing:.06em;color:#D9E2DC;background:var(--zwart)}
 .interieur__disclaimer{margin:14px 0 0;color:var(--zacht);font-size:13px;line-height:1.55;
   max-width:64ch}
+
+/* tussen en onder de gebouwen: zelfde kaarten als de interieurstrip, drie breed */
+.complex{background:var(--papier);padding:clamp(60px,10vh,120px) var(--m) 0}
+.complex h2{font-family:var(--display);font-weight:600;font-size:clamp(30px,4vw,52px);
+  margin:0 0 18px;letter-spacing:-.02em}
+.complex .inleiding{max-width:62ch;color:var(--zacht);font-size:15.5px;margin:0 0 34px}
+.complex__raster{grid-template-columns:repeat(3,1fr)}
+.complex__raster img{aspect-ratio:16/9}
 
 /* de kiezer, ook binnen de woningsectie */
 .kiezer--woningen{justify-content:flex-start;margin:0 0 30px}

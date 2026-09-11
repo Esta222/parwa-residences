@@ -2,8 +2,8 @@
   "use strict";
 
   var TYPES = {
-    a: { naam: "Type A · Parwa",       oppervlak: 68,  aantal: 16, kamers: "2 kamers, balkon" },
-    b: { naam: "Type B · Mope",        oppervlak: 85,  aantal: 18, kamers: "3 kamers, hoekbalkon" },
+    a: { naam: "Type A · Parwa",       oppervlak: 68,  aantal: 16, kamers: "2 kamers, loggia" },
+    b: { naam: "Type B · Mope",        oppervlak: 85,  aantal: 18, kamers: "3 kamers, hoekloggia" },
     c: { naam: "Type C · Kankantrie",  oppervlak: 104, aantal: 6,  kamers: "3 kamers, dakterras" }
   };
   var VOLGORDE = ["a", "b", "c"];
